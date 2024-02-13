@@ -1,19 +1,22 @@
-// Import the HTTP module
-const http = require('http');
+const express = require('express');
+const path = require('path');
 
-// Define the port number
+const app = express();
 const port = 3000;
 
-// Create an HTTP server
-const server = http.createServer((req, res) => {
-    // Set the response header
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
+// Middleware to serve static files
+app.use(express.static('public'));
 
-    // Send a response to the client
-    res.end('face mask kavalla aditya?  ?!\n');
+// Route for the SignIn page
+app.get('/signin', (req, res) => {
+    res.sendFile(path.join(__dirname, 'SignInpage.html'));
 });
 
-// The server listens on the specified port
-server.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+// Route for the SignUp page
+app.get('/signup', (req, res) => {
+    res.sendFile(path.join(__dirname, 'SignUppage.html'));
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });
