@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Profile - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .budget {
+            font-size: 18px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .vendor-details {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .vendor-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .vendor-profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .vendor-content {
+            margin-bottom: 20px;
+        }
+
+        .vendor-rating, .vendor-pricing, .description, .reviews {
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        .vendor-rating, .vendor-pricing {
+            display: inline-block;
+            margin-right: 15px;
+            color: #28a745;
+            font-size: 24px;
+        }
+
+        .vendor-rating {
+            color: #FFD700;
+        }
+
+        .album {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .description, .reviews {
+            text-align: justify;
+        }
+
+        .vendor-email {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .add-to-plan-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .add-to-plan-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .album {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .album-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .album-image:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 768px) {
+            .vendor-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vendor-profile-pic {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Profile</a>
+        <div class="budget">
+            Budget Remaining: 1,50,000RS
+        </div>
+    </div>
+
+    <div class="vendor-details">
+        <div class="vendor-header">
+            <img src="\elitecaters.png" alt="Vendor Profile Picture" class="vendor-profile-pic">
+            <div>
+                <span class="vendor-rating">&#9733; 4.5/5</span>
+                <span class="vendor-pricing">300RS - 5000RS</span>
+            </div>
+        </div>
+        <div class="vendor-content">
+            <h2>Elite Caterers</h2>
+            <div class="album">
+                <img src="\elitecaters.png" alt="Elite Caterers" class="album-image">
+                <img src="\KathiTawaCaterers.png" alt="Elite Caterers" class="album-image">
+                <img src="\Nanditha Caterers.png" alt="Elite Caterers" class="album-image">
+                <img src="\Shanmukha Caterers.png" alt="Elite Caterers" class="album-image">
+                <!-- Add more img tags for each image -->
+            </div>            
+            <p class="description">
+                <strong>About:</strong> Bringing People To The Table Since 2012
+                With over a decade of experience and a plethora of contented customer testimonials, we take pride in offering the best catering services in Hyderabad.
+                Since its inception, Elite Caterers has been catering to Hyderabad city to a wide range of events including Weddings, Birthdays, Housewarming Parties, Corporate Event Catering, Food Fests, Media Events, & Film Crew Catering Services in Hyderabad. 
+                For a minimum of 50 Pax guest list, you can get Elite Catering Service. With Elite Caterers shouldering the concerns & hassles, you’ll be free to enjoy a seamless and hassle-free experience.
+                At Elite Caterers, we hold the values of mutual trust and integrity in high regard. As such, we operate with utmost honesty and fairness. Please note that we do not offer tasting sessions due to our commitment to these principles.
+            </p>
+            <p class="reviews">
+                <strong>Reviews:</strong> I had the best experience with ELITE Caterers. They lived up to their reputation & my expectations. I booked them for my wedding, being an Overseas Citizen I had few connections in Hyderabad and was not sure where to go for an excellent service, food, and taste at reasonable prices.
+                Elite Caterers took that burden off my plate as I had a lot of preparations to do. The guests loved the taste, and the presentation of the food was more than presentable & satisfactory. I’d like to take this moment to give 5 stars for being very friendly & for giving an excellent service. Thanks.
+                Minhaj (Host) <br> <br>
+                We had a good experience with ELITE Caterers for my cousin’s wedding. They offered the best food you can imagine! They took a lot of time & care to ask us questions about what kind of event we were looking for, and what our tastes were like.
+                The menu selections were perfectly on-theme. They did an amazing job, the service was also wonderful – the staff they hired for the event was professional yet friendly. overall, the quality of food & level of service is great. 
+                We are satisfied.
+                Faiyan (Host)
+            </p>
+            <p class="vendor-email">Contact Email: sales@elitecaterers.in</p>
+            <button class="add-to-plan-btn">Add to Plan</button>
+        </div>
+    </div>
+</body>
+</html>

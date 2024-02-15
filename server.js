@@ -21,6 +21,14 @@ app.get('/signup', (req, res) => {
     res.sendFile(path.join(__dirname, 'SignUppage.html'));
 });
 
+app.get('/foodsearch', (req, res) => {
+    res.sendFile(path.join(__dirname, 'vendordetailpageforfood.html'));
+});
+
+app.get('/fooddetails', (req, res) => {
+    res.sendFile(path.join(__dirname, 'vendor detailpageforfood.html'));
+});
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
