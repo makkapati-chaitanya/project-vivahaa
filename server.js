@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // Middleware to serve static files
-app.use(express.static('public'));
+app.use(express.static('images'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'userdashboard.html'));
