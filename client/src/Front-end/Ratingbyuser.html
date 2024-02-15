@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate and Review</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .review-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 60%; /* Adjusted width */
+            max-width: 600px;
+        }
+
+        h2, .vendor-info {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .vendor-logo {
+            display: block;
+            margin: auto;
+            width: 100px; /* Logo size */
+            height: 100px; /* Maintain aspect ratio */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Cover fit for the image */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .star {
+            cursor: pointer;
+            color: #ccc;
+            font-size: 30px;
+            transition: color 0.2s;
+        }
+
+        .star:hover,
+        .star:hover ~ .star {
+            color: #ffcc00;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 100px;
+            resize: none;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="review-container">
+    <h2>Rate and Review</h2>
+    <!-- Vendor Logo and Info -->
+    <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vendor Logo" class="vendor-logo">
+    <div class="vendor-info">
+        <p>Vendor Name: <strong>[Vendor Name]</strong></p>
+        <p>Service Completed: <strong>[Service Name]</strong></p>
+    </div>
+    <!-- Star Rating -->
+    <div class="star-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+    </div>
+    <!-- Review Form -->
+    <form>
+        <div class="form-group">
+            <textarea id="review" name="review" placeholder="Write your review here..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Review</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Wedding Essentials - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar img.logo {
+            height: 50px; /* Adjust based on actual logo size */
+            margin-right: 20px;
+        }
+        .navbar a, .navbar select {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        .navbar select {
+            background-color: transparent;
+            border: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2, p {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vivahaa Logo" class="logo"> <!-- Update the src attribute to the path of your logo -->
+    <a href="#">DIY Assistance</a>
+    <select onchange="location = this.value;">
+        <option value="#">Select Location</option>
+        <option value="path_to_location_1">Location 1</option>
+        <option value="path_to_location_2">Location 2</option>
+        <!-- Add more locations as needed -->
+    </select>
+</div>
+
+<div class="container">
+    <h2>DIY Wedding Essentials</h2>
+    <p>Find everything you need for your DIY wedding planning, from invitations to makeup products.</p>
+    <ul>
+        <li><a href="#">Shop Wedding Invitations</a></li>
+        <li><a href="#">Order Flowers and Decor</a></li>
+        <li><a href="#">Browse Wedding Jewelry</a></li>
+        <li><a href="#">Shop Wedding Dresses</a></li>
+        <li><a href="#">Explore Return Gifts</a></li>
+        <li><a href="#">Find Makeup Products</a></li>
+    </ul>
+</div>
+
+<script>
+// Example function to handle location selection - customize as needed
+function handleLocationChange(event) {
+    window.location.href = event.target.value;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Bookings - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .budget-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .budget-info div {
+            margin-left: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .booking-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .booking {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .booking-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .booking-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .booking-info {
+            font-size: 18px;
+        }
+
+        .booking-info span {
+            display: block;
+        }
+
+        .remove-booking-btn {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .remove-booking-btn:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="budget-info">
+            <div>Select Budget:</div>
+            <!-- Dropdown to select budget -->
+            <select>
+                <option value="5000">$5,000</option>
+                <option value="10000">$10,000</option>
+                <option value="15000" selected>$15,000</option>
+                <option value="20000">$20,000</option>
+            </select>
+            <div>Remaining Budget: <span id="remaining-budget">$15,000</span></div>
+        </div>
+    </div>
+
+    <div class="booking-container">
+        <!-- Repeat for each booking -->
+        <div class="booking">
+            <div class="booking-header">
+                <div class="booking-details">
+                    <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Service" class="booking-img">
+                    <div class="booking-info">
+                        <span><strong>Service Name</strong></span>
+                        <span>Date: 2024-09-15</span>
+                        <span>Price: $2,500</span>
+                    </div>
+                </div>
+                <button class="remove-booking-btn">Remove</button>
+            </div>
+            <p>Description of the booked service...</p>
+        </div>
+        <!-- Repeat end -->
+         <!-- Repeat for each booking -->
+         <div class="booking">
+            <div class="booking-header">
+                <div class="booking-details1">
+                    <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Service" class="booking-img">
+                    <div class="booking-info">
+                        <span><strong>Service Name</strong></span>
+                        <span>Date: 2024-09-15</span>
+                        <span>Price: $2,500</span>
+                    </div>
+                </div>
+                <button class="remove-booking-btn">Remove</button>
+            </div>
+            <p>Description of the booked service...</p>
+        </div>
+        <!-- Repeat end -->
+         <!-- Repeat for each booking -->
+         <div class="booking">
+            <div class="booking-header">
+                <div class="booking-details2">
+                    <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Service" class="booking-img">
+                    <div class="booking-info">
+                        <span><strong>Service Name</strong></span>
+                        <span>Date: 2024-09-15</span>
+                        <span>Price: $2,500</span>
+                    </div>
+                </div>
+                <button class="remove-booking-btn">Remove</button>
+            </div>
+            <p>Description of the booked service...</p>
+        </div>
+        <!-- Repeat end -->
+    </div>
+</body>
+</html>

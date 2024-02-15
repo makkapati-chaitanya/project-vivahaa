@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Profile - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .budget {
+            font-size: 18px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .vendor-details {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .vendor-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .vendor-profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .vendor-content {
+            margin-bottom: 20px;
+        }
+
+        .vendor-rating, .vendor-pricing, .description, .reviews {
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        .vendor-rating, .vendor-pricing {
+            display: inline-block;
+            margin-right: 15px;
+            color: #28a745;
+            font-size: 24px;
+        }
+
+        .vendor-rating {
+            color: #FFD700;
+        }
+
+        .album {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .description, .reviews {
+            text-align: justify;
+        }
+
+        .vendor-email {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .add-to-plan-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .add-to-plan-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .vendor-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vendor-profile-pic {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Profile</a>
+        <div class="budget">
+            Budget Remaining: $15,000
+        </div>
+    </div>
+
+    <div class="vendor-details">
+        <div class="vendor-header">
+            <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vendor Profile Picture" class="vendor-profile-pic">
+            <div>
+                <span class="vendor-rating">&#9733; 4.7/5</span>
+                <span class="vendor-pricing">$3500 - $5500</span>
+            </div>
+        </div>
+        <div class="vendor-content">
+            <h2>Vendor Name</h2>
+            <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vendor Album" class="album">
+            <p class="description">
+                <strong>About:</strong> A detailed description of the vendor's past work, expertise, and accomplishments goes here. This section can elaborate on the vendor's style, approach to weddings, and any unique services they offer.
+            </p>
+            <p class="reviews">
+                <strong>Reviews:</strong> Reviews from previous clients can be featured here, providing testimonials and feedback about their experiences with the vendor's services.
+            </p>
+            <p class="vendor-email">Contact Email: vendor@example.com</p>
+            <button class="add-to-plan-btn">Add to Plan</button>
+        </div>
+    </div>
+</body>
+</html>

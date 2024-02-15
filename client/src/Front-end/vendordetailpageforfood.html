@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Vendors - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .vendor-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 20px auto;
+            gap: 20px; /* Added gap for spacing between vendor profiles */
+        }
+
+        .vendor-profile {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .vendor-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .vendor-info {
+            margin-left: 20px;
+        }
+
+        .vendor-info h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .vendor-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .rating {
+            color: #FFD700;
+            margin-right: 20px;
+        }
+
+        .price-quote {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .vendor-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .vendor-profile {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vendor-details {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vendor-info {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .rating, .price-quote {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Profile</a>
+        <a href="#">Search</a>
+    </div>
+
+    <div class="vendor-container">
+        <!-- Vendor Profile 1 -->
+        <div class="vendor-profile">
+            <div class="vendor-details">
+                <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vendor Logo" class="vendor-logo">
+                <div class="vendor-info">
+                    <h3>Vendor 1 Name</h3>
+                    <p>Specialty: Delicious Cuisine</p>
+                    <p>Location: Hyderabad, TN</p>
+                </div>
+            </div>
+            <div>
+                <span class="rating">&#9733; 4.5/5</span>
+                <span class="price-quote">3000Rs - 5000Rs</span>
+            </div>
+        </div>
+        <!-- Vendor Profile 2 -->
+        <div class="vendor-profile">
+            <div class="vendor-details">
+                <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vendor Logo" class="vendor-logo">
+                <div class="vendor-info">
+                    <h3>Vendor 2 Name</h3>
+                    <p>Specialty: Exquisite Desserts</p>
+                    <p>Location: Chennai, TN</p>
+                </div>
+            </div>
+            <div>
+                <span class="rating">&#9733; 4.7/5</span>
+                <span class="price-quote">2500Rs - 4500Rs</span>
+            </div>
+        </div>
+        <!-- Vendor Profile 3 -->
+        <div class="vendor-profile">
+            <div class="vendor-details">
+                <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vendor Logo" class="vendor-logo">
+                <div class="vendor-info">
+                    <h3>Vendor 3 Name</h3>
+                    <p>Specialty: Traditional Indian Feasts</p>
+                    <p>Location: Bangalore, KA</p>
+                </div>
+            </div>
+            <div>
+                <span class="rating">&#9733; 4.8/5</span>
+                <span class="price-quote">3500Rs - 6000Rs</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

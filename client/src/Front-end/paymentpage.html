@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            width: 50px; /* Logo size */
+            height: auto;
+        }
+
+        .navbar a, .navbar .notification {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            position: relative;
+        }
+
+        .navbar .notification::after {
+            content: '•';
+            color: #ff0000;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 24px; /* Adjust the size of the notification dot */
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .payment-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .payment-section {
+            margin: 20px 0;
+        }
+
+        .payment-details label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .payment-details input[type="text"], 
+        .payment-details input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="Vivaha Logo" class="logo"> <!-- Replace vivaha_logo_path.jpg with the actual logo path -->
+        <a href="#">Profile</a>
+        <div class="notification">Notifications</div>
+        <a href="#">Payment Page</a>
+    </div>
+
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+        <div class="payment-section">
+            <h3>Initial Booking Payment (50%)</h3>
+            <div class="payment-details">
+                <label for="booking-amount">Amount:</label>
+                <input type="number" id="booking-amount" readonly value="5000">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="Enter your card number">
+                <button class="submit-btn">Pay Now</button>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <h3>Final Payment (50%)</h3>
+            <div class="payment-details">
+                <label for="final-amount">Amount:</label>
+                <input type="number" id="final-amount" readonly value="5000">
+                <label for="card-number-final">Card Number:</label>
+                <input type="text" id="card-number-final" placeholder="Enter your card number">
+                <button class="submit-btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

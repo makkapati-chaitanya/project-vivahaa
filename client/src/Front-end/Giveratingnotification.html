@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Completion Notification</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .notification-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff0015;
+            margin: 0 0 20px 0;
+        }
+
+        p, .vendor-info {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .vendor-logo {
+            width: 120px; /* Size of the logo */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 60px; /* Make it round */
+            margin: 20px auto; /* Centering the logo */
+        }
+
+        .action-buttons a {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 10px 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="notification-container">
+    <h2>Service Completion</h2>
+    <!-- Vendor Logo -->
+    <img src="/Users/poojaeppanoori/Downloads/Vivahaa/vivahalogo1.webp" alt="[Vendor Name] Logo" class="vendor-logo">
+    <!-- Vendor Information -->
+    <div class="vendor-info">
+        <p>Vendor Name: <strong>[Vendor Name]</strong></p>
+        <p>Service Provided: <strong>[Service Name]</strong></p>
+    </div>
+    <p>Your service with <strong>[Vendor Name]</strong> has been successfully completed. We hope you had a satisfying experience.</p>
+    <div class="action-buttons">
+        <a href="#" class="button">Rate & Review</a>
+    </div>
+
+    <p>If you have any questions or require further assistance, please do not hesitate to contact us.</p>
+    <div class="action-buttons">
+        <a href="mailto:support@vivahaa.com" class="button">Contact Support</a>
+    </div>
+</div>
+
+</body>
+</html>
