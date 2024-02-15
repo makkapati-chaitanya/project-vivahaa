@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Vivahaa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .navbar input[type="search"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+
+        .container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .service h4 {
+            margin: 0;
+            padding: 10px 0;
+            color: #007bff;
+        }
+
+        .advertising {
+            grid-column: span 2;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .advertising {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="#">Profile</a>
+            <input type="search" placeholder="Search services...">
+        </div>
+        <a href="/signin">Sign In</a>
+        <a href="/signup">Sign Up</a>
+    </div>
+    <div class="container">
+        <div class="service">
+            <h4>Venues</h4>
+            <p>Find the perfect location for your special day.</p>
+        </div>
+        <div class="service">
+            <h4>Photographers</h4>
+            <p>Capture every moment with the best professionals.</p>
+        </div>
+        <div class="service">
+            <h4>Make-up Artists</h4>
+            <p>Look your best with expert make-up artists.</p>
+        </div>
+        <div class="service">
+            <h4>Florist and Decor</h4>
+            <p>Beautiful arrangements to brighten your venue.</p>
+        </div>
+        <div class="service">
+            <h4>Musicians and Dancers</h4>
+            <p>Entertain your guests with live performances.</p>
+        </div>
+        <div class="service">
+            <h4>Pandits</h4>
+            <p>Find experienced pandits for traditional rituals.</p>
+        </div>
+        <div class="service">
+            <h4>Food/Catering Services</h4>
+            <p>Delight your guests with exquisite cuisines.</p>
+        </div>
+        <div class="service">
+            <h4>DIY - Assistance</h4>
+            <p>Get help with your do-it-yourself projects.</p>
+        </div>
+        <div class="advertising">
+            <h4>Advertising Space</h4>
+            <p>Your ad could be here!</p>
+        </div>
+    </div>
+</body>
+</html>

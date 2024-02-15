@@ -7,6 +7,10 @@ const port = 3000;
 // Middleware to serve static files
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'userdashboard.html'));
+});
+
 // Route for the SignIn page
 app.get('/signin', (req, res) => {
     res.sendFile(path.join(__dirname, 'SignInpage.html'));
